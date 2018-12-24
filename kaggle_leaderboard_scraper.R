@@ -85,6 +85,9 @@ ggplot(lb) +
   theme_minimal() +
   labs(title = "Public LB Score Density Plot",
        subtitle = "with Logarithmic Score")
+
+
+ggsave("score_density.png")
   
 ## Number of Entries Density Plot
 
@@ -94,3 +97,6 @@ ggplot(lb) +
   scale_x_log10() +
   theme_minimal() +
   labs(title = "Number of Entries Density Plot")
+
+ggsave("entries_density.png")
+
