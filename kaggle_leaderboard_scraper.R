@@ -7,7 +7,7 @@ library(tidyverse) # Data Manipulation and Visualization
 
 #setwd("/Documents/R Codes") #define your working directory here where the screenshot will be saved
 
-rD <- rsDriver(port = 123L,  browser = "firefox") 
+rD <- rsDriver(port = 124L,  browser = "chrome") 
 
 
 remDr <- rD[["client"]]
@@ -16,11 +16,12 @@ remDr <- rD[["client"]]
 #competition_url <- "https://www.kaggle.com/c/ga-customer-revenue-prediction/leaderboard"
 
 
-competition_url <- "https://www.kaggle.com/c/traveling-santa-2018-prime-paths"
+competition_url <- "https://www.kaggle.com/c/two-sigma-financial-news"
+
+lb_url <- paste0(competition_url,"/leaderboard")
 
 
-
-remDr$navigate(paste0(competition_url,"/leaderboard"))
+remDr$navigate(lb_url)
 
 ### scrolling the page to its bottom
 
