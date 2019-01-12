@@ -1,17 +1,16 @@
 #devtools::install_github("ropensci/RSelenium")
 
-library(RSelenium)
-library(rvest)
-library(tidyverse)
+library(RSelenium) # Selenium Automation
+library(rvest) # Web Scraping
+library(tidyverse) # Data Manipulation and Visualization
 
 
 #setwd("/Documents/R Codes") #define your working directory here where the screenshot will be saved
 
-rD <- rsDriver(port = 123L,  browser = "firefox")
+rD <- rsDriver(port = 123L,  browser = "firefox") 
 
 
 remDr <- rD[["client"]]
-
 
 
 #competition_url <- "https://www.kaggle.com/c/ga-customer-revenue-prediction/leaderboard"
