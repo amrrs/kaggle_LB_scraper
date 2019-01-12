@@ -1,7 +1,7 @@
 # Kaggle Leaderboard Scraper
 ## Advanced R Scraper using RSelenium
 
-### Plots
+### Plots using the extracted data
 
 ![score_density](score_density.png)
 
